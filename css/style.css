@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-	/*--primary: #4a649c;*/
 	--primary: #600db5;
 	--darker: #1f004b;
 	--secondary: #ec00f0;
 	--bright: #51ccdc;
 	--main-text: #fff;
 	--highlight: #54efea;
-
 	--high_grad: linear-gradient(45deg, #ec00f0, #54efea);
-	--medium_grad: linear-gradient(45deg, #600db5, #1f004b);
-	--ambient_grad: linear-gradient(90deg, #1f004b, #600db5);
+	--medium_grad: linear-gradient(45deg, #3c0871, #0d001f);
+	--ambient_grad: linear-gradient(90deg, #0d001f, #3c0871);
+	--neon_graid: linear-gradient(45deg, #ec00f0, #51ccdc);
 }
 
 .mob_only {
@@ -111,7 +108,6 @@ h6 {
 
 h2,
 h3 {
-
 	text-shadow: 0 0 10px #fff;
 }
 
@@ -161,7 +157,7 @@ img {
 	margin-bottom: 0;
 	position: absolute;
 	z-index: 99999;
-	min-height: 87px;
+	min-height: 67px;
 	background: var(--ambient_grad);
 	background-repeat: repeat-x;
 	border: none;
@@ -199,7 +195,7 @@ img {
 }
 
 .navbar:hover .superheader {
-	opacity: 1;
+	/*opacity: 1;*/
 	animation-duration: 40s;
 }
 
@@ -224,7 +220,7 @@ img {
 }
 
 .main .navbar {
-	background: rgba(24, 57, 83, 0.5);
+	/*background: rgba(24, 57, 83, 0.5);*/
 }
 
 .navbar-header h1 {
@@ -233,7 +229,7 @@ img {
 }
 
 .navbar-header img {
-	width: 160px;
+	width: 240px;
 }
 
 .navbar-nav>li {
@@ -244,13 +240,13 @@ img {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-	color: #FFF;
+	/*color: #FFF;*/
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-	color: #ffffff;
+	color: var(--bright);
 	text-shadow: 0 0 10px var(--bright);
 	background-color: transparent;
 }
@@ -269,7 +265,7 @@ img {
 
 .hover-effect a::before,
 .hover-effect a::after {
-	position: absolute;
+	/*position: absolute;
 	left: 0;
 	width: 100%;
 	height: 2px;
@@ -281,36 +277,36 @@ img {
 	transition: opacity 0.3s, transform 0.3s;
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
+	transform: translateY(-10px);*/
 }
 
 .hover-effect a::before {
-	top: 0;
+	/*top: 0;
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
+	transform: translateY(-10px);*/
 }
 
 .hover-effect a::after {
-	bottom: 0;
+	/*bottom: 0;
 	-webkit-transform: translateY(10px);
 	-moz-transform: translateY(10px);
-	transform: translateY(10px);
+	transform: translateY(10px);*/
 }
 
 .hover-effect a:hover,
 .hover-effect a:focus {
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .hover-effect a:hover::before,
 .hover-effect a:focus::before,
 .hover-effect a:hover::after,
 .hover-effect a:focus::after {
-	opacity: 1;
+	/*opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
-	transform: translateY(0px);
+	transform: translateY(0px);*/
 }
 
 /*-- //Link-Hover-Effect --*/
@@ -418,6 +414,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	font-size: 32px;
 	color: #fff;
 	margin-bottom: 40px;
+	line-height: 1.5;
 }
 
 .gallery-grids {
@@ -502,40 +499,48 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*--//trend--*/
 
 /*--new games--*/
-.button {
-	/*font-size: 16px;*/
-	font-weight: 600;
-	background: var(--secondary);
-	color: var(--main-text);
-	margin: 20px auto 30px;
-	padding: 8px;
-	border-radius: 8px;
-	display: block;
-	min-width: 100px;
-	max-width: 220px;
+.game .button {
 	text-align: center;
-	box-shadow: 0 5px 5px #00000033;
-	font-family: "Press Start 2P", system-ui;
-	min-width: 100px;
+	width: 240px;
+}
+
+.button {
+	color: var(--secondary);
+	font-size: 10px;
+	margin: 15px auto auto auto;
+	padding: 12px 10px;
+	display: block;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Press Start 2P', cursive;
+	width: fit-content;
+	height: fit-content;
+	background: var(--highlight);
+	border: 0px;
+	position: relative;
+	box-shadow: inset -4px 2px 1px 1px grey, inset -4px -2px 1px 1px lightgray, inset 4px 0px 1px 1px lightgray;
 }
 
 .button.underline {
-	background: var(--primary);
+	/*background: var(--primary);*/
 	border: none;
 }
 
 .button.underline:hover {
-	background: var(--primary);
+	/*background: var(--primary);*/
 }
 
 .btn-primary {
-	background: var(--secondary);
+	/*background: var(--secondary);
 	max-width: 280px;
-	width: 100%;
+	width: 100%;*/
 }
 
 form .btn-primary {
-	margin-top: 20px;
+	margin-top: 32px;
 	max-width: 315px;
 }
 
@@ -571,9 +576,18 @@ form .row {
 }
 
 .button:hover {
-	background: var(--high_grad);
-	color: #fff;
-	text-shadow: 0 0 10px #fff;
+	color: var(--secondary);
+	cursor: pointer;
+	background-color: #06B6D1;
+}
+
+.button:hover {
+	color: var(--secondary);
+	top: 5px;
+	box-shadow:
+		-4px 2px 1px 1px grey,
+		-4px -2px 1px 1px lightgray,
+		4px 0px 1px 1px lightgray;
 }
 
 h3.game_title {
@@ -609,12 +623,11 @@ h3.game_title {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--primary);
+	background: var(--bright);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #ff5722;
-
+	background: var(--secondary)
 }
 
 .new-grid-agile {
@@ -651,7 +664,7 @@ h3.game_title {
 	color: #fff;
 	text-align: center;
 	position: relative;
-	font-size: 2.5em;
+	font-size: 16px;
 	letter-spacing: 2px;
 }
 
@@ -779,7 +792,7 @@ h3.game_title {
 	width: calc(25% - 20px);
 	min-height: 300px;
 	margin-bottom: 90px;
-	background: #202d4ae0;
+	background: #1f004b86;
 	text-align: center;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -804,30 +817,55 @@ h3.game_title {
 
 .service-grid-agileits p {
 	min-height: 85px;
-	padding: 0 20px;
+	/*padding: 0 20px;*/
 	font-size: 14px;
 	line-height: 27px;
 	color: var(--main-text);
 }
 
-.service-grid-agileits a {
+.service-grid-agileits a,
+a.learn {
 	color: var(--secondary);
-	border: 2px solid var(--secondary);
-	font-size: 15px;
-	margin-top: 15px;
-	padding: 7px 15px;
-	display: inline-block;
+	font-size: 12px;
+	margin: 15px auto auto auto;
+	padding: 15px;
+	display: block;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
+	font-family: 'Press Start 2P', cursive;
+	width: fit-content;
+	height: fit-content;
+	background: var(--highlight);
+	border: 0px;
+	position: relative;
+	box-shadow:
+		inset -4px 2px 1px 1px grey,
+		inset -4px -2px 1px 1px lightgray,
+		inset 4px 0px 1px 1px lightgray;
+}
+
+.service-grid-agileits a:hover,
+a.learn:hover {
+	cursor: pointer;
+	background-color: #06B6D1;
+}
+
+.service-grid-agileits a:active,
+a.learn:active {
+	top: 5px;
+	box-shadow:
+		-4px 2px 1px 1px grey,
+		-4px -2px 1px 1px lightgray,
+		4px 0px 1px 1px lightgray;
 }
 
 .service-grid-agileits:hover a {
-	color: var(--highlight);
+	/*color: var(--highlight);
 	border: 2px solid var(--highlight);
-	background: var(--primary);
+	background: var(--primary);*/
 }
 
 .service-grid-agileits:hover .glyphicon {
@@ -840,6 +878,8 @@ h3.game_title {
 /*-- services bottom --*/
 .services-bottom-ltpwr-agileits {
 	background: url(../images/gif_bg_2.gif) no-repeat 0px 0px;
+	background-color: #600db596;
+	background-blend-mode: darken;
 	background-size: cover;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -860,7 +900,7 @@ h3.game_title {
 	color: #fff;
 	margin-bottom: 10px;
 	font-size: 24px;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 
 .wthree_info p {
@@ -873,18 +913,18 @@ h3.game_title {
 }
 
 a.learn {
-	color: #fff;
+	/*color: #fff;
 	border: 2px solid #fff;
 	font-size: 14px;
 	padding: 7px 15px;
 	display: inline-block;
-	margin-top: 50px;
+	margin-top: 50px;*/
 }
 
 a.learn:hover {
-	color: #fff;
+	/*color: #fff;
 	border: 2px solid var(--highlight);
-	background: var(--highlight);
+	background: var(--highlight);*/
 }
 
 /*-- //services bottom --*/
@@ -906,7 +946,7 @@ a.learn:hover {
 }
 
 .footer .links a {
-	color: #b7b7b7;
+	color: #e5e5e5;
 	font-size: 14px;
 	font-family: "Source Code Pro", monospace;
 	padding-left: 7px;
@@ -924,6 +964,7 @@ a.learn:hover {
 	color: var(--bright);
 	font-size: 20px;
 	margin-bottom: 30px;
+	line-height: 1.5;
 }
 
 .footer-left-ltpwr ul li {
@@ -960,7 +1001,7 @@ a.learn:hover {
 }
 
 .footer-right-ltpwr h4 {
-	color: #b7b7b7;
+	color: #e5e5e5;
 }
 
 .footer-right-ltpwr img {
@@ -969,7 +1010,7 @@ a.learn:hover {
 
 .footer-right-ltpwr p {
 	font-size: 14px;
-	color: #b7b7b7;
+	color: #e5e5e5;
 	line-height: 30px;
 }
 
@@ -980,7 +1021,7 @@ p.agileinfo {
 .copyright p {
 	text-align: center;
 	font-size: 14px;
-	color: #808080;
+	color: #e5e5e5;
 	border-top: 1px dotted #000;
 	padding: 30px 0px 0 0px;
 }
@@ -997,7 +1038,7 @@ p.agileinfo {
 
 /*-- sub-banner --*/
 .sub-banner {
-	background: url(../images/banner3.jpg) no-repeat 0px 0px;
+	/*background: url(../images/banner3.jpg) no-repeat 0px 0px;*/
 	min-height: 87px;
 	background-size: cover;
 }
@@ -1022,7 +1063,7 @@ p.agileinfo {
 
 .about-grid-left-agileits-ltpwrlayouts ul li a {
 	text-decoration: none;
-	color: #999;
+	color: #e5e5e5;
 }
 
 .about-grid-left-agileits-ltpwrlayouts ul li i {
@@ -1030,7 +1071,7 @@ p.agileinfo {
 }
 
 .round_num {
-	padding: 3px 9px;
+	padding: 3px 5px;
 	background: var(--secondary);
 	color: #fff;
 	border-radius: 60%;
@@ -1072,10 +1113,20 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-.login_page form .btn {
-	height: 40px;
+.login_page.cancel form .btn {
+	font-size: 9px;
+}
+
+.login_page form .btn-primary,
+.login_page form  .btn-secondary{
+	margin-top: 32px;
 	width: 100%;
-	max-width: 315px;
+}
+
+.login_page.cancel form .btn {
+	/*height: 40px;
+	width: 100%;
+	max-width: 315px;*/
 }
 
 .login_page .contact-right-ltpwr {
@@ -1109,13 +1160,14 @@ input::-webkit-inner-spin-button {
 }
 
 .button.btn-secondary {
-	background: #fff;
+	/*background: #fff;
 	color: var(--secondary);
-	border: 1px solid var(--secondary);
+	border: 1px solid var(--secondary);*/
 }
 
 .contact-agileinfo {
-	min-height: 50vh;
+	/*min-height: 50vh;*/
+	height: fit-content;
 }
 
 .thx .contact-agileinfo {
@@ -1416,7 +1468,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 /*-- Collections --*/
 .collection-agileits {
-	padding: 50px 0px;
+	/*padding: 50px 0px;*/
 }
 
 .collection-left,
@@ -1430,7 +1482,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .collection-text {
-	background-color: #000;
+	background: var(--medium_grad);
 	text-align: center;
 	padding-top: 75px;
 }
@@ -1440,6 +1492,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .collection-text h3 {
+	font-size: 16px;
 	color: #FFF;
 	margin: 30px 0 20px;
 }
@@ -1488,7 +1541,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 .ltpwrl_team_grid p {
-	color: #999;
+	color: #e5e5e5;
 	text-align: center;
 }
 
@@ -1864,13 +1917,13 @@ p.agileits {
 }
 
 .events-section2-agileinfo {
-	background: #f4f4f4;
+	/*background: #f4f4f4;*/
 	padding: 50px 0px;
 }
 
 .blog-text-ltpwrls h4 {
-	color: var(--primary);
-	font-size: 35px;
+	color: var(--bright);
+	font-size: 24px;
 	text-align: left;
 	font-weight: 400;
 	transition: 0.5s all;
@@ -1881,17 +1934,17 @@ p.agileits {
 }
 
 .blog-text-ltpwrls h4:hover {
-	color: var(--highlight);
+	color: var(--secondary);
 }
 
 .item_info {
-	border: 1px solid #ddd;
+	border: 1px solid var(--secondary);
 	padding: 0.5em 2em;
 	margin: 2.2em 0;
 }
 
 .item_info ul li i {
-	color: #8a8a8a;
+	color: var(--secondary);
 	margin-right: 15px;
 }
 
@@ -1900,12 +1953,12 @@ p.agileits {
 	font-size: 1.1em;
 	margin-right: 27px;
 	vertical-align: middle;
-	color: #777;
+	color: var(--secondary);
 	list-style: none;
 }
 
 .item_info ul li a {
-	color: #777;
+	color: var(--secondary);
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -1923,7 +1976,7 @@ p.agileits {
 }
 
 .agileits_reply .secure-hint {
-	margin-top: -20px;
+	/*margin-top: -20px;*/
 	display: block;
 	text-align: center;
 	margin-bottom: 30px;
@@ -1950,18 +2003,17 @@ form .form-hint b {
 .membership_title img {
 	width: 30px;
 	display: inline-block;
-
 }
 
 .navbar-default .navbar-nav>li>a {
 	font-family: "Press Start 2P", system-ui;
-	font-size: 12px;
-	color: var(--bright);
+	font-size: 10px;
+	color: var(--secondary);
 }
 
 .navbar:hover #navbar>ul>li>a {
-	color: #fff;
-	text-shadow: 0 0 10px #000;
+	color: var(--bright);
+	text-shadow: 0 0 10px var(--bright);
 }
 
 #sub_menu a:hover {
@@ -1977,7 +2029,7 @@ form .form-hint b {
 #sub_menu:hover {}
 
 #sub_menu {
-	padding-left: 10px;
+	padding: 5px 10px;
 	display: none;
 	height: max-content;
 	position: absolute;
@@ -1985,6 +2037,7 @@ form .form-hint b {
 	list-style: none;
 	margin-top: 50px;
 	border-left: 2px solid var(--secondary);
+	background: var(--primary);
 }
 
 .main #sub_menu {
@@ -1996,14 +2049,14 @@ form .form-hint b {
 #profile svg {
 	width: 30px;
 	height: 30px;
-	top: 12px;
-	fill: var(--bright);
+	top: 4px;
+	fill: var(--secondary);
 	position: absolute;
 	transition: 0.5s;
 }
 
 #profile svg:hover {
-	fill: #fff;
+	fill: var(--bright);
 	-webkit-filter: drop-shadow(0px 0px 3px var(--bright));
 	filter: drop-shadow(0px 0px 3px var(--bright));
 
@@ -2011,7 +2064,7 @@ form .form-hint b {
 
 
 .blog-text-ltpwrls p {
-	color: #999;
+	color: #e5e5e5;
 	font-size: 14px;
 	text-align: left;
 	line-height: 30px;
@@ -2061,7 +2114,7 @@ a.blog-read:hover {
 }
 
 .contact-left-agile .phone-agileits-ltpwrlayouts {
-	margin: 25px 0;
+	margin: 0;
 }
 
 .contact-left-agile p {
@@ -2082,30 +2135,47 @@ a.blog-read:hover {
 	margin: 0 10px 25px 0;
 	padding: 15px 10px;
 	background-color: transparent;
-	border: none;
-	border-left: 1px solid var(--bright);
-	border-bottom: 1px solid var(--bright);
+	border: 1px solid var(--bright);
 	outline: transparent;
+	border-radius: 4px;
 }
 
 .contact-right-ltpwr textarea {
-	width: 100%;
+	width: 98%;
 	height: 125px;
 }
 
 .contact-right-ltpwr input.more_btn {
-	float: right;
-	padding: 7px 15px;
-	background-color: transparent;
-	border: 2px solid var(--bright);
-	outline: transparent;
-	color: var(--bright);
+	color: var(--secondary);
+	font-size: 10px;
+	margin: 15px 2% 15px auto;
+	padding: 12px 10px;
+	display: block;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Press Start 2P', cursive;
+	width: fit-content;
+	height: fit-content;
+	background: var(--highlight);
+	border: 0px;
+	position: relative;
+	box-shadow: inset -4px 2px 1px 1px grey, inset -4px -2px 1px 1px lightgray, inset 4px 0px 1px 1px lightgray;
 }
 
 .contact-right-ltpwr input.more_btn:hover {
-	color: #FFf;
-	border: 2px solid var(--secondary);
-	background: var(--secondary);
+	cursor: pointer;
+	background-color: #06B6D1;
+}
+
+.contact-right-ltpwr input.more_btn:active {
+	top: 5px;
+	box-shadow:
+		-4px 2px 1px 1px grey,
+		-4px -2px 1px 1px lightgray,
+		4px 0px 1px 1px lightgray;
 }
 
 ::-webkit-input-placeholder {
@@ -2121,6 +2191,10 @@ a.blog-read:hover {
 
 .map-hover {
 	position: relative;
+}
+
+#map {
+	display: none;
 }
 
 .map-hover-1 {
@@ -2152,7 +2226,7 @@ a.blog-read:hover {
 /*-- single --*/
 .agileits_breadcrumbs {
 	padding: 1em 0;
-	background: var(--secondary);
+	/*background: var(--secondary);*/
 }
 
 .agileits_breadcrumbs_left {
@@ -2171,13 +2245,13 @@ a.blog-read:hover {
 
 .agileits_breadcrumbs_left ul li {
 	display: inline-block;
-	color: #212121;
+	color: var(--main-text);
 	text-transform: uppercase;
 }
 
 .agileits_breadcrumbs_right h3 {
-	font-size: 2em;
-	color: #212121;
+	font-size: 1.3em;
+	color: var(--main-text);
 	font-weight: 700;
 }
 
@@ -2219,31 +2293,31 @@ a.blog-read:hover {
 
 .wthree_blog_left_grid ul li {
 	display: inline-block;
-	color: #8a8a8a;
+	color: var(--bright);
 	line-height: 30px;
 }
 
 .wthree_blog_left_grid ul li a {
 	display: inline-block;
-	color: #212121;
+	color: var(--bright);
 }
 
 .wthree_blog_left_grid ul li span {
-	color: #8a8a8a;
+	color: var(--bright);
 	padding-right: 1em;
 }
 
 .wthree_blog_left_grid p {
 	text-align: left;
 	line-height: 27px;
-	color: #999;
+	color: #e5e5e5;
 	font-size: 14px;
 }
 
 .wthree_blog_left_grid p i {
 	display: block;
 	margin: 1em 0;
-	color: #999;
+	color: #e5e5e5;
 	text-align: left;
 }
 
@@ -2318,7 +2392,7 @@ select {
 .agileits_reply input[name="expMonth"],
 .agileits_reply input[name="expYear"],
 .agileits_reply input[name="cvv2"] {
-	width: calc(100% / 3 - 3px);
+	width: calc(100% / 3 - 6px);
 	display: inline-block;
 	white-space: nowrap;
 }
@@ -2362,27 +2436,44 @@ select:focus {
 }
 
 .agileits_reply input[type="submit"] {
-	padding: 10px 35px;
-	border: 2px solid var(--secondary);
-	color: var(--secondary);
-	background: var(--main-text);
-	outline: none;
-	min-width: 200px;
-
+    color: var(--secondary);
+    font-size: 10px;
+    margin: 15px auto auto auto;
+    padding: 12px 10px;
+    display: block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Press Start 2P', cursive;
+    width: 200px;
+    height: fit-content;
+    background: var(--highlight);
+    border: 0px;
+    position: relative;
+    box-shadow: inset -4px 2px 1px 1px grey, inset -4px -2px 1px 1px lightgray, inset 4px 0px 1px 1px lightgray;
 }
 
-.agileits_reply input[type="submit"]:hover {
-	border: 2px solid var(--secondary);
-	color: var(--secondary);
-	background: var(--main-text);
+.agileits_reply input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #06B6D1;
+}
+
+.agileits_reply input[type="submit"]:active{
+	top: 5px;
+	box-shadow:
+		-4px 2px 1px 1px grey,
+		-4px -2px 1px 1px lightgray,
+		4px 0px 1px 1px lightgray;
 }
 
 .ltpwrls_search input[type="text"] {
 	outline: none;
 	padding: 10px;
-	background: #f5f5f5;
-	border: 1px solid #E1E1E1;
-	color: #212121;
+	background: transparent;
+	border: 1px solid var(--primary);
+	color: var(--bright);
 	font-size: 14px;
 	width: 80%;
 }
@@ -2408,12 +2499,12 @@ select:focus {
 	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
 	text-align: left;
-	color: #999;
+	color: #e5e5e5;
 	font-size: 14px;
 }
 
 .ltpwrl_categories ul li a {
-	color: #999;
+	color: #e5e5e5;
 	text-decoration: none;
 	line-height: 1.8em;
 	font-size: 14px;
@@ -2486,7 +2577,7 @@ select:focus {
 .agileits_reply h3,
 .wthree_blog_left_grid h3,
 .newsletter h4 {
-	font-size: 1.5em !important;
+	font-size: 20px !important;
 	color: var(--main-text);
 	font-weight: 700;
 	margin-bottom: 1em;
@@ -3038,7 +3129,7 @@ li>a {
 }
 
 .main .navbar:hover {
-	background: rgba(24, 57, 83, 0.5);
+	/*background: rgba(24, 57, 83, 0.5);*/
 }
 
 .cancel .container>p {
@@ -3047,7 +3138,7 @@ li>a {
 }
 
 .cancel form .btn-primary {
-	margin-top: 25px;
+	/*margin-top: 25px;*/
 }
 
 .cancel .login_page form .btn {
@@ -3055,7 +3146,7 @@ li>a {
 }
 
 .nav>li>a {
-	padding: 15px 0;
+	padding: 10px 0;
 }
 
 /*-- //single --*/
@@ -3153,7 +3244,7 @@ li>a {
 
 	.collection-grid {
 		padding: 0;
-		height: 234px;
+		height: 260px;
 	}
 
 	.collection-text img {
@@ -3161,7 +3252,8 @@ li>a {
 	}
 
 	.collection-text h3 {
-		margin: 12px 0 12px;
+		margin: 12px 5px 12px;
+		font-size: 10px;
 	}
 
 	.collection-text p {
@@ -3187,7 +3279,7 @@ li>a {
 	}
 
 	.blog-text-ltpwrls h4 {
-		color: #333;
+		/*color: #333;*/
 	}
 
 	.events-text-ltpwr-agile p {
@@ -3249,12 +3341,12 @@ li>a {
 	.gallery-ltpwrlayouts h2,
 	.contact-agileinfo h2,
 	.events-ltpwrlayouts h2 {
-		font-size: 35px;
+		font-size: 24px;
 	}
 
 	.trend-ltpwrlayouts h4,
 	.services-agileits-ltpwrlayouts h4 {
-		font-size: 24px;
+		font-size: 16px;
 	}
 
 	.service-grid-agileits {
@@ -3278,8 +3370,9 @@ li>a {
 	}
 
 	.view h4 {
-		font-size: 1.8em;
+		font-size: 16px;
 		font-family: "Press Start 2P", system-ui;
+		height: fit-content;
 	}
 
 	.view p {
@@ -3424,7 +3517,7 @@ li>a {
 	}
 
 	.footer-right-ltpwr img {
-		width: 16%;
+		width: 100%;
 	}
 
 	.events-left-agile-agileits-ltpwrlayouts {
@@ -3450,6 +3543,7 @@ li>a {
 		width: 66.6%;
 		float: left;
 		padding-left: 0;
+		padding-top: 15px;
 	}
 
 	.item_info {
@@ -3466,7 +3560,7 @@ li>a {
 	}
 
 	.blog-text-ltpwrls h4 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	.item_info {
@@ -3555,8 +3649,8 @@ li>a {
 	}
 
 	.collection-text h3 {
-		margin: 8px 0 8px;
-		font-size: 24px;
+		margin: 8px;
+		font-size: 10px;
 	}
 
 	.collection-text p {
@@ -3578,14 +3672,13 @@ li>a {
 	.navbar-right {
 		float: right !important;
 		margin-right: -15px;
-		width: calc(100% - 160px);
+		width: calc(100% - 240px);
 		display: flex;
 		justify-content: space-around;
 	}
 }
 
 @media screen and (max-width: 768px) {
-
 	.collection-text p {
 		padding: 0 10px;
 	}
@@ -3597,7 +3690,7 @@ li>a {
 
 	.navbar-default .navbar-toggle {
 		background: transparent;
-		border: 2px solid var(--bright);
+		border: none;
 	}
 
 	.navbar-default .navbar-toggle .icon-bar {
@@ -3613,9 +3706,15 @@ li>a {
 	#sub_menu {
 		position: relative;
 		margin-top: 0;
-		margin-left: 27px;
-		border-left: 2px solid var(--secondary);
+		/* margin-left: 27px; */
+		/* border-left: 2px solid var(--secondary); */
 		margin-bottom: 20px;
+		background: none;
+		padding: 0px 10px;
+	}
+
+	#sub_menu a {
+		font-size: 12px;
 	}
 
 	.navbar-header h1 {
@@ -3653,7 +3752,7 @@ li>a {
 
 	.trend-ltpwrlayouts h4,
 	.services-agileits-ltpwrlayouts h4 {
-		font-size: 22px;
+		font-size: 14px;
 	}
 
 	.view .mask,
@@ -3715,7 +3814,7 @@ li>a {
 	.agileits_reply h3,
 	.wthree_blog_left_grid h3,
 	.newsletter h4 {
-		font-size: 1.4em !important;
+		font-size: 16px !important;
 	}
 
 	.wthree_blog_left_grid ul li span {
@@ -3737,13 +3836,14 @@ li>a {
 
 	.trend-ltpwrlayouts h4,
 	.services-agileits-ltpwrlayouts h4 {
-		font-size: 19px;
+		font-size: 12px;
 	}
 
 	.service-grid-agileits {
 		width: calc(50% - 20px);
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
+		min-height: 350px;
 	}
 
 	.service-grid-agileits-bottom {
@@ -3855,7 +3955,7 @@ li>a {
 	}
 
 	.footer h4 {
-		font-size: 25px;
+		font-size: 18px;
 	}
 
 	figure.effect-zoe h3 {
@@ -3944,7 +4044,7 @@ li>a {
 	}
 
 	.footer h4 {
-		font-size: 24px;
+		font-size: 16px;
 	}
 
 	.events-text-ltpwr-agile p {
@@ -3978,6 +4078,7 @@ li>a {
 	.footer-right-ltpwr {
 		width: 100%;
 		float: left;
+		padding: 0;
 	}
 
 	.footer-middle-ltpwr {
@@ -4001,7 +4102,7 @@ li>a {
 	}
 
 	.footer-right-ltpwr img {
-		width: 7%;
+		width: 100%;
 	}
 
 	.events-text-ltpwr-agile h4 {
@@ -4057,11 +4158,11 @@ li>a {
 	}
 
 	.view h4 {
-		font-size: 2.2em;
+		font-size: 14px;
 	}
 
 	.view p {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	[class*="small-dialog"] {
@@ -4093,7 +4194,7 @@ li>a {
 	.about-grid-right-ltpwr-agile {
 		width: 100%;
 		float: left;
-		padding: 0 15px;
+		padding: 10px 15px;
 	}
 
 	.about-grid-left-agileits-ltpwrlayouts ul li {
@@ -4176,7 +4277,7 @@ li>a {
 	}
 
 	.superheader {
-		height: 76px;
+		height: 64px;
 	}
 
 	.new-grid-ltpwrl.col-md-6 {
@@ -4185,7 +4286,7 @@ li>a {
 	}
 
 	.callbacks_nav {
-		top: 60%;
+		top: 75%;
 	}
 
 	.navbar-header h1 {
@@ -4195,11 +4296,13 @@ li>a {
 
 	.services-bottom-ltpwr-agileits h3 {
 		font-size: 30px;
+		padding: 0 20px;
 	}
 
 	.wthree_info p {
 		font-size: 14px;
 		letter-spacing: 1px;
+		padding: 0 24px;
 	}
 
 	.gallery-grid {
@@ -4285,7 +4388,7 @@ li>a {
 	}
 
 	.blog-text-ltpwrls h4 {
-		font-size: 25px;
+		font-size: 16px;
 	}
 
 	.map iframe {
@@ -4331,7 +4434,8 @@ li>a {
 
 	.navbar-header img {
 		margin-left: 5%;
-		width: 25%;
+		width: 50%;
+		margin-top: 2%;
 	}
 
 	.trend-ltpwrlayouts h2,
@@ -4343,11 +4447,11 @@ li>a {
 	.gallery-ltpwrlayouts h2,
 	.contact-agileinfo h2,
 	.events-ltpwrlayouts h2 {
-		font-size: 28px;
+		font-size: 20px;
 	}
 
 	.view h4 {
-		font-size: 2em;
+		font-size: 14px;
 	}
 
 	.services-bottom-ltpwr-agileits {
@@ -4433,7 +4537,7 @@ li>a {
 	}
 
 	.footer-right-ltpwr img {
-		width: 35%;
+		width: 100%;
 	}
 
 	.contact-left-agile {
@@ -4455,7 +4559,7 @@ li>a {
 @media screen and (max-width:384px) {
 
 	.view h4 {
-		font-size: 1.7em;
+		font-size: 14px;
 	}
 
 	.services-bottom-ltpwr-agileits h3 {
@@ -4587,7 +4691,7 @@ li>a {
 
 	.trend-ltpwrlayouts h4,
 	.services-agileits-ltpwrlayouts h4 {
-		font-size: 16px;
+		font-size: 10px;
 	}
 
 	[class*="small-dialog"] {
@@ -4629,7 +4733,7 @@ li>a {
 	}
 
 	.footer-right-ltpwr img {
-		width: 11%;
+		width: 100%;
 	}
 
 	.events-text-ltpwr-agile h4 {
@@ -4650,12 +4754,12 @@ li>a {
 	.agileits_reply h3,
 	.wthree_blog_left_grid h3,
 	.newsletter h4 {
-		font-size: 1.2em !important;
+		font-size: 14px !important;
 	}
 }
 
 .framed h4 {
-	color: #02b484;
+	color: var(--bright)
 }
 
 .pop-up {
@@ -4772,12 +4876,149 @@ img.img-responsive.zoom-img {
 	display: none;
 }
 
-.video-responsive{
+.video-responsive {
 	display: none;
 }
 
-.services-agileits-ltpwrlayouts.main_video_bg{
+.services-agileits-ltpwrlayouts.main_video_bg {
 	background-image: url(../images/gif_bg.webp);
 	background-size: cover;
 	background-blend-mode: normal;
+}
+
+.glyphicon-globe:before {
+	content: url('../images/planet.svg');
+}
+
+.glyphicon-flag:before {
+	content: url('../images/flag.svg');
+}
+
+.glyphicon-knight:before {
+	content: url('../images/heart.svg');
+}
+
+.glyphicon-th:before {
+	content: url('../images/game.svg');
+}
+
+h3,
+.h3 {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.flex-control-paging li a {
+	background: var(--bright);
+	cursor: default;
+	border: 2px solid var(--bright);
+}
+
+.navbar-collapse {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.navbar {
+	padding-bottom: 0;
+}
+
+.form-control {
+	background: none;
+	border-color: var(--bright);
+	color: var(--bright);
+}
+
+form label {
+	margin-bottom: 5px;
+}
+
+.btn-primary {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary:hover {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover .btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus {
+	color: var(--secondary) !important;
+	background-color: var(--highlight) !important;
+	border: none !important;
+	border-color: none !important;
+}
+
+.wrapBox {
+    padding-left: 20px;
+}
+
+.extraCard h2 {
+	font-size: 20px;
+}
+
+.cc_flow input[type="submit"]{
+	width: 200px;
+}
+
+.agileits_reply input[type="text"], .agileits_reply input[type="email"], select{
+	color: var(--bright);
+}
+
+
+@media screen and (max-width:995px) {
+	.navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 8px !important;
+	}
+
+	.agileits_reply input[name="expMonth"], .agileits_reply input[name="expYear"], .agileits_reply input[name="cvv2"]{
+		width: 100%;
+	}
 }
