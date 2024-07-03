@@ -40,8 +40,8 @@ body #buttonCode {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	width: min-content;
-	height: min-content;
+	width: 85px;
+	height: 85px;
 	text-align: center;
 	background: #fff;
 	text-shadow: 0 0 5px #fff;
@@ -59,7 +59,7 @@ body #buttonCode svg {
 	fill: var(--secondary);
 	max-width: 100%;
 	height: auto;
-	min-width: 100px;
+	min-width: 55px;
 }
 
 @keyframes lightFlick {
@@ -157,7 +157,7 @@ img {
 	margin-bottom: 0;
 	position: absolute;
 	z-index: 99999;
-	min-height: 67px;
+	min-height: 87px;
 	background: var(--ambient_grad);
 	background-repeat: repeat-x;
 	border: none;
@@ -429,6 +429,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .services-agileits-ltpwrlayouts h4 {
 	color: var(--main-text);
 	margin-bottom: 20px;
+	line-height: 1.5;
 }
 
 /*--flexisel--*/
@@ -505,7 +506,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .button {
-	color: var(--secondary);
+	color: var(--primary);
 	font-size: 10px;
 	margin: 15px auto auto auto;
 	padding: 12px 10px;
@@ -576,13 +577,13 @@ form .row {
 }
 
 .button:hover {
-	color: var(--secondary);
+	color: var(--primary);
 	cursor: pointer;
 	background-color: #06B6D1;
 }
 
 .button:hover {
-	color: var(--secondary);
+	color: var(--primary);
 	top: 5px;
 	box-shadow:
 		-4px 2px 1px 1px grey,
@@ -790,7 +791,7 @@ h3.game_title {
 	padding: 30px 5px;
 	margin: 0 10px;
 	width: calc(25% - 20px);
-	min-height: 300px;
+	min-height: 350px;
 	margin-bottom: 90px;
 	background: #1f004b86;
 	text-align: center;
@@ -802,6 +803,8 @@ h3.game_title {
 }
 
 .service-grid-agileits .glyphicon {
+	height: 76px;
+    width: 76px;
 	font-size: 30px;
 	background: var(--secondary);
 	padding: 20px;
@@ -825,7 +828,7 @@ h3.game_title {
 
 .service-grid-agileits a,
 a.learn {
-	color: var(--secondary);
+	color: var(--primary);
 	font-size: 12px;
 	margin: 15px auto auto auto;
 	padding: 15px;
@@ -1071,7 +1074,7 @@ p.agileinfo {
 }
 
 .round_num {
-	padding: 3px 5px;
+	padding: 3px 8px;
 	background: var(--secondary);
 	color: #fff;
 	border-radius: 60%;
@@ -1118,7 +1121,7 @@ input::-webkit-inner-spin-button {
 }
 
 .login_page form .btn-primary,
-.login_page form  .btn-secondary{
+.login_page form .btn-secondary {
 	margin-top: 32px;
 	width: 100%;
 }
@@ -1931,6 +1934,7 @@ p.agileits {
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-ms-transition: 0.5s all;
+	margin-bottom: 20px;
 }
 
 .blog-text-ltpwrls h4:hover {
@@ -1941,6 +1945,7 @@ p.agileits {
 	border: 1px solid var(--secondary);
 	padding: 0.5em 2em;
 	margin: 2.2em 0;
+	display: none;
 }
 
 .item_info ul li i {
@@ -2005,15 +2010,19 @@ form .form-hint b {
 	display: inline-block;
 }
 
+.navbar.navbar-default .container {
+	margin-top: 10px;
+}
+
 .navbar-default .navbar-nav>li>a {
 	font-family: "Press Start 2P", system-ui;
-	font-size: 10px;
+	font-size: 12px;
 	color: var(--secondary);
 }
 
 .navbar:hover #navbar>ul>li>a {
 	color: var(--bright);
-	text-shadow: 0 0 10px var(--bright);
+	/*text-shadow: 0 0 10px var(--bright);*/
 }
 
 #sub_menu a:hover {
@@ -2146,7 +2155,7 @@ a.blog-read:hover {
 }
 
 .contact-right-ltpwr input.more_btn {
-	color: var(--secondary);
+	color: var(--darker);
 	font-size: 10px;
 	margin: 15px 2% 15px auto;
 	padding: 12px 10px;
@@ -2436,31 +2445,31 @@ select:focus {
 }
 
 .agileits_reply input[type="submit"] {
-    color: var(--secondary);
-    font-size: 10px;
-    margin: 15px auto auto auto;
-    padding: 12px 10px;
-    display: block;
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    font-family: 'Press Start 2P', cursive;
-    width: 200px;
-    height: fit-content;
-    background: var(--highlight);
-    border: 0px;
-    position: relative;
-    box-shadow: inset -4px 2px 1px 1px grey, inset -4px -2px 1px 1px lightgray, inset 4px 0px 1px 1px lightgray;
+	color: var(--primary);
+	font-size: 10px;
+	margin: 15px auto auto auto;
+	padding: 12px 10px;
+	display: block;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Press Start 2P', cursive;
+	width: 200px;
+	height: fit-content;
+	background: var(--highlight);
+	border: 0px;
+	position: relative;
+	box-shadow: inset -4px 2px 1px 1px grey, inset -4px -2px 1px 1px lightgray, inset 4px 0px 1px 1px lightgray;
 }
 
-.agileits_reply input[type="submit"]:hover{
+.agileits_reply input[type="submit"]:hover {
 	cursor: pointer;
 	background-color: #06B6D1;
 }
 
-.agileits_reply input[type="submit"]:active{
+.agileits_reply input[type="submit"]:active {
 	top: 5px;
 	box-shadow:
 		-4px 2px 1px 1px grey,
@@ -3346,7 +3355,7 @@ li>a {
 
 	.trend-ltpwrlayouts h4,
 	.services-agileits-ltpwrlayouts h4 {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.service-grid-agileits {
@@ -3356,6 +3365,12 @@ li>a {
 	.service-grid-agileits .glyphicon {
 		font-size: 25px;
 		padding: 15px;
+		height: 65px;
+		width: 65px;
+	}
+
+	.service-grid-agileits p{
+		min-height: 120px;
 	}
 
 	.new-grid-ltpwrl,
@@ -4934,7 +4949,7 @@ form label {
 }
 
 .btn-primary {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
@@ -4942,14 +4957,14 @@ form label {
 
 .btn-primary:focus,
 .btn-primary.focus {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
 }
 
 .btn-primary:hover {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
@@ -4957,7 +4972,7 @@ form label {
 
 .btn-primary:active,
 .btn-primary.active {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
@@ -4969,7 +4984,7 @@ form label {
 .btn-primary.active:focus,
 .btn-primary:active.focus,
 .btn-primary.active.focus {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
@@ -4977,7 +4992,7 @@ form label {
 
 .btn-primary:active,
 .btn-primary.active {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
@@ -4988,28 +5003,29 @@ form label {
 .btn-primary[disabled]:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus {
-	color: var(--secondary) !important;
+	color: var(--primary) !important;
 	background-color: var(--highlight) !important;
 	border: none !important;
 	border-color: none !important;
 }
 
 .wrapBox {
-    padding-left: 20px;
+	padding-left: 20px;
 }
 
 .extraCard h2 {
 	font-size: 20px;
 }
 
-.cc_flow input[type="submit"]{
+.cc_flow input[type="submit"] {
 	width: 200px;
 }
 
-.agileits_reply input[type="text"], .agileits_reply input[type="email"], select{
+.agileits_reply input[type="text"],
+.agileits_reply input[type="email"],
+select {
 	color: var(--bright);
 }
-
 
 @media screen and (max-width:995px) {
 	.navbar-nav>li>a {
@@ -5018,7 +5034,9 @@ form label {
 		font-size: 8px !important;
 	}
 
-	.agileits_reply input[name="expMonth"], .agileits_reply input[name="expYear"], .agileits_reply input[name="cvv2"]{
+	.agileits_reply input[name="expMonth"],
+	.agileits_reply input[name="expYear"],
+	.agileits_reply input[name="cvv2"] {
 		width: 100%;
 	}
 }
