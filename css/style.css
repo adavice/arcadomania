@@ -980,10 +980,10 @@ a.learn:hover {
 }
 
 .footer .footer-left-ltpwr ul {
-	display: none;
+	/*display: none;*/
 }
 
-.footer .footer-left-ltpwr ul:nth-of-type(1) {
+.footer .footer-left-ltpwr ul {
 	display: flex;
 }
 
@@ -4888,7 +4888,11 @@ img.img-responsive.zoom-img {
 #address,
 .email,
 #contact_phone {
-	display: none;
+	/*display: none;*/
+}
+
+.contact-left-agile .phone-agileits-ltpwrlayouts{
+	margin-bottom: 20px;
 }
 
 .video-responsive {
