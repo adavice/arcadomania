@@ -38,7 +38,7 @@ div.wpwl-group-brand {
     height: 25px;
 }
 div.wpwl-brand-card  { width: 65px }
-div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.com/v1/paymentWidgets/img/brand.png") }
+/*div.wpwl-brand-custom  { margin: 0px 5px; background-image: url("https://oppwa.com/v1/paymentWidgets/img/brand.png") }*/
 .wpwl-control { background: transparent; border: 1px solid #394d79}
 .wpwl-control input::placeholder {color: red!important;}
 .wpwl-group-submit.wpwl-clearfix  button {
